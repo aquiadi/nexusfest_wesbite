@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS FEST 2025 — Contact & Register</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="nav-logo" href="index.html">NEXUS<span>FEST</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-register-btn">Register Now</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <span class="section-tag" style="display:block; margin-bottom:0.5rem;">// Get In Touch</span>
+    <h1>CONTACT & REGISTER</h1>
+    <p>Have questions? Want to register? Drop us a message and we'll get back to you within 24 hours.</p>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <div class="section">
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>REACH US DIRECTLY</h3>
+        <p>
+          The NexusFest committee is active from <strong>9 AM to 9 PM</strong> on all working days leading up to the event. Don't hesitate — we love hearing from participants, sponsors, and collaborators.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-item-label">Address</p>
+              <p class="contact-item-value">Greenwood University, NH-48, Near City Junction, State — 560001</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <p class="contact-item-label">Email</p>
+              <p class="contact-item-value">nexusfest@greenwood.edu</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <p class="contact-item-label">Phone</p>
+              <p class="contact-item-value">+91 9876 543 210 (Festival Head — Arjun)</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <p class="contact-item-label">Social Media</p>
+              <p class="contact-item-value">@nexusfest2025 on Instagram, Twitter, LinkedIn</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <p class="contact-item-label">Response Time</p>
+              <p class="contact-item-value">Within 24 hours (weekdays) / 48 hours (weekends)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div style="margin-top: 2rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 5px; height: 180px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 0.5rem; color: var(--text-muted);">
+          <span style="font-size: 2rem;">🗺️</span>
+          <p style="font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;">Greenwood University Campus</p>
+          <p style="font-size: 0.8rem;">NH-48, City Junction — 560001</p>
+        </div>
+      </div>
+
+      <!-- Registration Form -->
+      <div class="contact-form">
+        <h3>REGISTER / ENQUIRE</h3>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name *</label>
+            <input type="text" id="fname" name="fname" placeholder="Arjun" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name *</label>
+            <input type="text" id="lname" name="lname" placeholder="Mehta" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="arjun@college.edu" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" />
+        </div>
+
+        <div class="form-group">
+          <label for="college">College / University *</label>
+          <input type="text" id="college" name="college" placeholder="Greenwood University" required />
+        </div>
+
+        <div class="form-group">
+          <label for="event">Event of Interest *</label>
+          <select id="event" name="event" required>
+            <option value="" disabled selected>— Select an event —</option>
+            <option value="hackathon">48Hr Hackathon</option>
+            <option value="robowars">Robo Wars</option>
+            <option value="ctf">Capture The Flag</option>
+            <option value="bands">Battle of Bands</option>
+            <option value="art">Art Exhibition</option>
+            <option value="openmic">Open Mic Night</option>
+            <option value="quiz">Quiz Championship</option>
+            <option value="multiple">Multiple Events</option>
+            <option value="general">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="accommodation">Need Accommodation?</label>
+          <select id="accommodation" name="accommodation">
+            <option value="no">No, I'm local</option>
+            <option value="yes">Yes, outstation student</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message / Questions</label>
+          <textarea id="message" name="message" placeholder="Any questions, team details, or special requirements..."></textarea>
+        </div>
+
+        <button type="button" class="form-submit" onclick="handleSubmit()">
+          SUBMIT REGISTRATION →
+        </button>
+
+        <p style="font-family: var(--font-mono); font-size: 0.65rem; color: var(--text-muted); margin-top: 1rem; text-align: center;">
+          By submitting, you agree to our event guidelines. Registration fee (₹200) collected at the venue.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUCCESS MESSAGE (hidden by default) -->
+  <div id="success-msg" style="display:none; text-align:center; padding: 2rem; background: rgba(80,200,130,0.08); border: 1px solid rgba(80,200,130,0.3); border-radius:5px; margin: 0 2rem 2rem; max-width:700px; margin-left:auto; margin-right:auto;">
+    <p style="font-family: var(--font-display); font-size: 2rem; color: #50c878; letter-spacing:2px;">SUBMITTED!</p>
+    <p style="color: var(--text-muted); margin-top: 0.5rem;">Thanks! We'll get back to you within 24 hours. See you at NexusFest 2025! 🎉</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html">NEXUS<span>FEST</span></a>
+          <p>Annual cultural and technical festival of Greenwood University. Est. 2010. Celebrating 15 years of excellence.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Events</h4>
+          <ul>
+            <li><a href="events.html">Hackathon</a></li>
+            <li><a href="events.html">Battle of Bands</a></li>
+            <li><a href="events.html">Robotics</a></li>
+            <li><a href="events.html">Art Expo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:nexusfest@greenwood.edu">nexusfest@greenwood.edu</a></li>
+            <li><a href="tel:+919876543210">+91 9876 543 210</a></li>
+            <li><a href="#">@nexusfest2025</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 NexusFest — Greenwood University. All rights reserved.</p>
+        <p>Built with <span>♥</span> by the Web Dev Committee</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit() {
+      const fname = document.getElementById('fname').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const college = document.getElementById('college').value.trim();
+      const event = document.getElementById('event').value;
+
+      if (!fname || !email || !college || !event) {
+        alert('Please fill in all required fields (marked with *).');
+        return;
+      }
+
+      // Hide form, show success
+      document.querySelector('.contact-form').style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+      document.getElementById('success-msg').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
